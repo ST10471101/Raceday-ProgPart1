@@ -1,0 +1,53 @@
+name: RaceDay System CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  raceday-validation:
+    name: RaceDay System Validation
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout RaceDay Repository
+        uses: actions/checkout@v4
+
+      - name: Check README File
+        run: |
+          echo "Checking README.md..."
+          test -f README.md
+          echo "README.md found successfully."
+
+      - name: Check ERD Document
+        run: |
+          echo "Checking ERD document..."
+          test -f "prog ERD 1 (1).pdf"
+          echo "ERD document found successfully."
+
+      - name: Check GitHub Workflow Folder
+        run: |
+          echo "Checking GitHub Actions folder..."
+          test -d ".github/workflows"
+          echo "Workflow folder found successfully."
+
+      - name: Display Project Information
+        run: |
+          echo "=========================================="
+          echo "       RACEDAY SYSTEM CI/CD"
+          echo "=========================================="
+          echo "Project validation completed."
+          echo "README: PASS"
+          echo "ERD Document: PASS"
+          echo "Workflow Folder: PASS"
+          echo "=========================================="
+
+      - name: CI/CD Completed
+        run: |
+          echo "RaceDay System CI/CD workflow completed successfully!"
