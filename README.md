@@ -78,7 +78,7 @@ POST /api/events
 PUT /api/events/{id}
 DELETE /api/events/{id}
 ```
-### Categories
+Categories
 ```text
 GET /api/events/{eventId}/categories
 GET /api/categories/{id}
