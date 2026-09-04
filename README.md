@@ -60,16 +60,7 @@ Users must log in before accessing protected features.
 
 The system uses different permissions depending on the user's role:
 
-| Role            | Access                                                |
-| --------------- | ----------------------------------------------------- |
-| **Public**      | View available events, categories, routes and weather |
-| **Participant** | Manage personal profile and race enrolments           |
-| **Organiser**   | Manage events, categories, routes and view enrolments |
-
-This helps prevent users from accessing functions that they are not authorised to use.
-
-
-## 🔗 Main API Features
+ Main API Features
 
 The RaceDay REST API contains endpoints for:
 
