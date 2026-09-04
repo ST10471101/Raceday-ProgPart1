@@ -64,15 +64,12 @@ The system uses different permissions depending on the user's role:
 
 The RaceDay REST API contains endpoints for:
 
-
-
 ### Users
 
 ```text
 GET /api/users/me
 PUT /api/users/me
 ```
-
 ### Events
 
 ```text
@@ -82,7 +79,6 @@ POST /api/events
 PUT /api/events/{id}
 DELETE /api/events/{id}
 ```
-
 ### Categories
 
 ```text
