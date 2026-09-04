@@ -6,7 +6,6 @@ Project Description
 RaceDay is a web-based event management system designed to make it easier to organise and participate in running and racing events.
 The system allows **Organisers** to create and manage race events, categories and routes, while **Participants** can view available events and enrol in races.
 The system also provides event-related information such as race routes and weather information. The API uses role-based access control to make sure that users can only perform actions they are authorised to perform.
-
 The main purpose of RaceDay is to provide a centralised system where race organisers can manage events and participants can easily find and register for races.
 
 Main Objectives
