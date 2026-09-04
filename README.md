@@ -64,12 +64,7 @@ The system uses different permissions depending on the user's role:
 
 The RaceDay REST API contains endpoints for:
 
-### Authentication
 
-```text
-POST /api/auth/register
-POST /api/auth/login
-```
 
 ### Users
 
