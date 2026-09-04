@@ -68,7 +68,6 @@ The system uses different permissions depending on the user's role:
 
 This helps prevent users from accessing functions that they are not authorised to use.
 
----
 
 ## 🔗 Main API Features
 
