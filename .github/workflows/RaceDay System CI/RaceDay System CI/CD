@@ -1,0 +1,15 @@
+name: RaceDay System CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-raceday:
+    name: Validate RaceDay System
+    runs-on: ubuntu-latest
