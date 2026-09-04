@@ -277,9 +277,7 @@ The API should be tested to ensure that:
 
 **Repository:** GitHub
 
----
 
-## 📄 Conclusion
 
 RaceDay provides a centralised solution for managing running and racing events. By separating Organiser and Participant responsibilities, the system provides appropriate access to different features while protecting restricted functionality.
 
