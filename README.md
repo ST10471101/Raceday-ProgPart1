@@ -248,24 +248,7 @@ The API should be tested to ensure that:
 * Participants can enrol in races.
 * Participants can cancel enrolments.
 * Unauthorised users cannot access protected features.
-* Invalid requests return appropriate HTTP status codes.
-
----
-
-## 📊 API Response Codes
-
-| Status Code          | Meaning                              |
-| -------------------- | ------------------------------------ |
-| **200 OK**           | Request completed successfully       |
-| **201 Created**      | New resource successfully created    |
-| **204 No Content**   | Resource successfully deleted        |
-| **400 Bad Request**  | Invalid request or information       |
-| **401 Unauthorized** | User is not authenticated            |
-| **403 Forbidden**    | User does not have permission        |
-| **404 Not Found**    | Requested resource does not exist    |
-| **409 Conflict**     | Request conflicts with existing data |
-
----
+* Invalid requests return appropriate HTTP status codes
 
 Project
 **Project Name:** RaceDay System
