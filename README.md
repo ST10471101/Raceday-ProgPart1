@@ -267,14 +267,10 @@ The API should be tested to ensure that:
 
 ---
 
-## 👨‍💻 Project
-
+Project
 **Project Name:** RaceDay System
-
 **Purpose:** Race event management and participant enrolment.
-
 **Main Users:** Organisers and Participants.
-
 **Repository:** GitHub
 
 
