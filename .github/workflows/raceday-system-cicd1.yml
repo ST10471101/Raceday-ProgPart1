@@ -1,0 +1,66 @@
+name: RaceDay System CI/CD1
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  raceday-ci:
+    name: RaceDay Project Validation
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout RaceDay Repository
+        uses: actions/checkout@v4
+
+      - name: Check README
+        run: |
+          echo "Checking RaceDay README..."
+          if [ -f "README.md" ]; then
+            echo "README.md found successfully."
+          else
+            echo "ERROR: README.md not found."
+            exit 1
+          fi
+
+      - name: Check Assignment PDF
+        run: |
+          echo "Checking RaceDay assignment document..."
+          if [ -f "PROG ass1.pdf" ]; then
+            echo "PROG ass1.pdf found successfully."
+          else
+            echo "ERROR: PROG ass1.pdf not found."
+            exit 1
+          fi
+
+      - name: Check GitHub Actions Folder
+        run: |
+          echo "Checking GitHub Actions workflow..."
+          if [ -d ".github/workflows" ]; then
+            echo "GitHub Actions folder found successfully."
+          else
+            echo "ERROR: GitHub Actions folder not found."
+            exit 1
+          fi
+
+      - name: Display RaceDay Project Status
+        run: |
+          echo "=========================================="
+          echo "       RACEDAY SYSTEM CI/CD"
+          echo "=========================================="
+          echo "Project: RaceDay System"
+          echo "README: PASS"
+          echo "Assignment Document: PASS"
+          echo "GitHub Actions: PASS"
+          echo "=========================================="
+
+      - name: CI/CD Validation Complete
+        run: |
+          echo "RaceDay System CI/CD completed successfully!"
+          echo "All required project files have been validated."
