@@ -1,0 +1,37 @@
+name: RaceDay CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Validate RaceDay Project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Check Repository Files
+        run: |
+          echo "RaceDay project files:"
+          ls -la
+
+      - name: Check README
+        run: |
+          test -f README.md
+          echo "README.md found successfully."
+
+      - name: Check ERD Document
+        run: |
+          test -f "prog ERD 1.pdf"
+          echo "ERD PDF found successfully."
+
+      - name: CI Completed
+        run: |
+          echo "RaceDay CI validation completed successfully."
